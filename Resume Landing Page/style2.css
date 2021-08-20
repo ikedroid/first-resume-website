@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300');
+html {
+    font-size: 16px;
+}
+body {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'header header'
+    'article article'
+    'biodata biodata'
+    'skill cert'
+    'employ exp'
+    'edu edu'
+    'footer footer';
+    background-color: black;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: column;
+    padding: auto;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+    color:#FFFFFF;
+    text-align: justify;
+}
+#grand-container {
+    background-image: url("ike.png");
+    background-size: 100vw;
+    background-image: 100vh;
+    padding: 10vw;
+    opacity: 0.6;
+    background-image: fixed;
+}
+#mama {
+    background-size: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#headerpg1 {
+    grid-area: header;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#headerpg1 a img {
+    image-rendering: crisp-edges;
+    border-radius: 60%;
+    height: 5vw;
+    width: 5vw;
+    margin-top: 2vw;
+    padding-right: 1vw;
+    padding-left: 2vw;
+}
+#img {
+    grid-area: 'img';
+}
+article {
+    grid-area: 'article';
+    justify-content: center;
+    align-content: center;
+    text-align: justify;
+}
+    
+}
+#bio{
+    grid-area: 'biodata';
+    margin: auto;
+    padding-bottom: 1vw;
+    justify-content: center;
+    align-content: center;
+}
+#skill {
+    grid-area: 'skill';
+}
+#cert {
+    grid-area: 'cert';
+}
+#exp{
+    grid-area: 'exp';
+}
+#edu {
+    grid-area: 'edu';
+}
+.items{
+    color: #FFEA00;
+}
+table {
+    padding-right: 2vw;
+}
+.features {
+    margin: auto;
+    padding-bottom: 1vw;
+    justify-content: center;
+    align-content: center;
+}
+a {
+    text-decoration: none;
+    color:whitesmoke;
+}
+#certification, #biodata, #skillset, #education, #experience, #headerpg1 {
+    font-family: 'Fredoka One', cursive;
+    color: #FFEA00;
+}
+footer {
+    grid-area: footer;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    text-align: center;
+    font-size: 0.75rem;
+}

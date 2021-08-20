@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+html {
+    font-size: 16px;
+}
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'header'
+    'right'
+    'main'
+    'menu'
+    'footer';
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka One', cursive;
+    color:#FFFFFF;
+    
+}
+#grand-container {
+    background-image: url("ike gray.png");
+    background-size: 100vw;
+    background-image: 100vw;
+    padding: 10vw;
+    opacity: 0.6;
+}
+#headerpg1 {
+    grid-area: header;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+#headerpg1 a img {
+    image-rendering: crisp-edges;
+    border-radius: 60%;
+    height: 5vw;
+    width: 5vw;
+    margin-top: 2vw;
+    padding-right: 1vw;
+    padding-left: 2vw;
+}
+#occupation {
+    grid-area: right;
+    width: max-content;
+    height:min-content;
+    color:#FFFFFF;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 4vw;
+    padding-left: 3vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#occupation #p1 {
+    margin-top: 0px;
+    padding-top: 0px;
+    width: fit-content;
+    align-content: center;
+    word-wrap: none;
+    color: #FFEA00;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5rem;
+    
+}
+#occupation #p2 {
+    width: fit-content;
+    word-wrap: none;
+    margin-top:0vw;
+    padding-top: 0px;
+    font-size: 1.2rem;
+    font-style: italic;
+    
+    }
+.quote {
+    grid-area: main;
+    width:max-content;
+    margin-top: 0%;
+    padding:0%;
+    color:#FFFFFF;
+    align-items: center;
+    font-size: 1.5rem;
+    font-style: center;
+}
+.container q {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+blockquote cite::before {
+    content: '–';
+}
+nav {
+    grid-area: menu;
+}
+#navmap .navnode {
+    text-decoration: none;
+    color:white;
+    
+}
+.navnode ul{
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 10%;
+    padding: 10%;
+    list-style: square inside url('ike favicon.png');
+}
+ul a{
+    text-decoration: none;
+    color: #FFEA00;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 60px;
+    image-rendering: crisp-edges;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-github {
+    background: #000000;
+    color: white;
+}
+  
+.fa-phone {
+    background:  #430297;
+    color: white;
+}
+footer {
+    grid-area: footer;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    text-align: center;
+    font-size: 0.75rem;
+}
